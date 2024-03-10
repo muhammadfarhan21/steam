@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    background: #35374B;
+    font-family: 'Poppins', sans-serif;
+}
+
+i {
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    object-fit: cover;
+    width: 100px;
+}
+
+
+
+/* star swipe nav */
+
+.container .navright {
+    transform: translateX(0);
+}
+
+.swipe-nav {
+    height: 100vh;
+    width: 80%;
+    position: absolute;
+    background: #35374B;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: all 0.4s ease;
+}
+
+.container .swipe-nav .bx-x {
+   width: fit-content;
+   margin-bottom: 13px;
+   font-size: 25px;
+   border: 1px solid #aeaeae;
+   border-radius: 5px;
+   font-weight: 600;
+}
+
+.container .swipe-nav ul {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.container .swipe-nav ul li {
+    font-weight: 200;
+    color: #fff;
+    cursor: pointer;
+}
+
+.container .swipe-nav ul li::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 2%;
+    background-color:  #dad2d2;
+}
+
+.container .swipe-nav .bottom .valve{
+    border: 3px solid #dad2d2;
+    width: fit-content;
+    padding: 1px 4px;
+}
+
+.container .swipe-nav .bottom .valve h2 {
+    color: #e9e9e9;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.container .swipe-nav .bottom p {
+    font-size: 10px;
+    margin-top: 10px;
+    color: #B5C0D0;
+}
+/* start nav section */
+.container .head-nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background: #070F2B;
+    padding: 13px;
+}
+
+.container .head-nav .bx-menu {
+    font-size: 2rem;
+}
+
+.container .head-nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    flex: 1;
+}
+
+
+.container .head-nav .logo i {
+    font-size: 2.3rem;
+}
+
+.container .head-nav .logo a {
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.container .head-nav .logo a  sup {
+    font-size: 8px;
+    font-weight: 200;
+}
+/* end nav section */
+
+/* start search section */
+.container .search-section {
+    background: linear-gradient(100deg,#387ADF,#333A73);
+    padding: 10px 20px;
+}
+
+.container .search-section .menu {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.container .search-section .menu li {
+    margin-bottom: 12px;
+}
+
+.container .search-section .search {
+    width: 100%;
+    background: #50727B;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px;
+    margin-top: 12px;
+    border: 1px solid rgba(255, 255, 255,0.4);
+}
+
+.container .search-section .search .input {
+    flex: 1;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.container .search-section .search i {
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #aeaeae;
+    font-weight: 500;
+}
+
+/* end search-section */
+
+/* start ads section */
+.container .ads-section {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJx143P8za0cpWkibldP0787tn7ERkQiEzig&usqp=CAU");
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .ads-section .first-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.container .ads-section .first-section img {
+    width: 90px;
+    box-shadow: 2px 2px 20px #387ADF,-2px -2px 20px #387ADF;
+}
+
+.container .ads-section .second-section {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255,0.8);
+    font-size: .90rem;
+    margin: 10px 0;
+    text-shadow: 1px 1px 10px #387ADF,-1px -1px 10px #387ADF;
+}
+
+.container .ads-section .third-section {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+}
+
+.container .ads-section .third-section img {
+    width: 140px;
+    box-shadow: 2px 2px 20px #387ADF,-2px -2px 20px #387ADF;
+}
+
+/* end ads section */
+/* start event section */
+
+.container .special-event{
+    padding: 12px;
+    margin-top: 10px;
+}
+
+.container .special-event .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .special-event .header h4 {
+    font-weight: 400;
+    color: #fff;
+    font-size: 15px;
+}
+
+.container .special-event .header .left {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.container .special-event .content {
+    padding: 6px 0;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.container .special-event .isi-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .special-event .isi-content img {
+    width: 100%;
+    height: 260px;
+}
+
+.container .special-event .isi-content .bottom {
+    background: linear-gradient(-14deg,#59D5E0,#333A73);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 20px 20px 40px 20px;
+}
+
+.container .special-event .isi-content .bottom h2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+}
+
+.container .special-event .isi-content .bottom>p {
+    font-size: 11px;
+    font-weight: 500;
+    color: #B5C0D0;
+}
+
+.container .special-event .isi-content .bottom .discount-label {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+    gap: 4px;
+    background: #87A922;
+    margin-top: 16px;
+}
+
+
+.container .special-event .isi-content .bottom .discount-label .right {
+    padding: 4px;
+}
+
+.container .special-event .isi-content .bottom .discount-label .right h2{
+    font-size: 23px;
+    font-weight: 600;
+    
+}
+
+.container .special-event .isi-content .bottom .discount-label .left {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #35374B;
+    padding: 0 5px;
+}
+
+.container .special-event .isi-content .bottom .discount-label .left p {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+}
+
+.container .special-event .isi-content .bottom .discount-label .left span {
+    color: #87A922;
+}
