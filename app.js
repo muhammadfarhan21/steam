@@ -7,5 +7,11 @@ buttonNav.addEventListener('click', () => {
 })
 
 closeButton.addEventListener('click', () => {
-    Nav.classList.remove("navright");s
+    Nav.classList.remove("navright");
+})
+
+window.addEventListener('click', (e) => {
+    if (e.target !== buttonNav && e.target !== Nav) {
+        Nav.classList.remove("navright");
+    }
 })
